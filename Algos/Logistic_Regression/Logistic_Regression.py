@@ -54,7 +54,7 @@ if __name__ == "__main__":
         X, y, test_size=0.2
     )
 
-    regressor = LogisticRegression(lr=0.05, n_iters=1000)
+    regressor = LogisticRegression()
     regressor.fit(X_train, y_train)
     predictions = regressor.predict(X_test)
 
